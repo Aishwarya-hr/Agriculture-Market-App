@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FarmerNavg"
+    android:background="@android:color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Crop Registration form"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="35dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=""
+                android:textSize="40dp" />
+
+            <EditText
+                android:id="@+id/cid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter Crop ID"
+                android:inputType="textPersonName"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/cname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter Crop Name "
+                android:inputType="textPersonName"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/hectare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter Hectares"
+                android:inputType="number"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/yeild"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter Approximate yeild(in tuns)"
+                android:inputType="number"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Selling Price"
+                android:inputType="number"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter location"
+                android:inputType="textPersonName"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Add a Crop Photo here"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="20dp" />
+
+            <ImageButton
+                android:id="@+id/image"
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:gravity="center_horizontal"
+                android:src="@drawable/ic_baseline_add_photo_alternate_24"
+                android:textAlignment="center"
+                android:onClick="goToPhoto"/>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Do you want add for,"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="20dp" />
+
+            <RadioGroup
+                android:id="@+id/statusgroup"
+                android:layout_width="223dp"
+                android:layout_height="52dp"
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
+                android:textSize="20dp">
+
+                <RadioButton
+                    android:id="@+id/bidding"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="checkStatus"
+                    android:text="Bidding" />
+
+                <RadioButton
+                    android:id="@+id/sale"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="checkStatus"
+                    android:text="Sale" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:onClick="addToCropData"
+                android:text="ADD"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView"/>
+
+
+            <TextView
+                android:layout_width="208dp"
+                android:layout_height="74dp"
+                android:text="                                                  " />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
+

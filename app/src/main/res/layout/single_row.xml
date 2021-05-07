@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:contentPadding="3dp"
+    app:cardUseCompatPadding="true"
+    android:elevation="3dp"
+    app:cardCornerRadius="5dp"
+    android:background="@android:color/holo_blue_light">
+
+    <RelativeLayout
+        android:layout_width="375dp"
+        android:layout_height="200dp"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:id="@+id/CropImage"
+            android:layout_width="170dp"
+            android:layout_height="200dp"
+            android:src="@drawable/mini1" />
+
+        <TextView
+            android:id="@+id/cropName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="46dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginRight="48dp"
+            android:layout_marginBottom="173dp"
+            android:background="@android:color/holo_orange_light"
+            android:text="name"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="124dp"
+            android:layout_marginRight="118dp"
+            android:text="unit"
+            android:textSize="30dp"
+             />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="52dp"
+            android:layout_height="34dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="274dp"
+            android:layout_marginLeft="274dp"
+            android:layout_marginTop="124dp"
+            android:layout_marginEnd="49dp"
+            android:layout_marginRight="49dp"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Tuns" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FarmerNavg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/farmer"
+                tools:layout_editor_absoluteX="67dp"
+                tools:layout_editor_absoluteY="32dp" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="60dp"></Space>
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=""
+                android:textColor="@android:color/holo_green_dark"
+                android:gravity="center"
+                android:textSize="30dp" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp"></Space>
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=""
+                android:gravity="center"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="30dp" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp"></Space>
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=""
+                android:gravity="center"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="30dp" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp"></Space>
+            <TextView
+                android:id="@+id/street"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=""
+                android:gravity="center"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="30dp" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp"></Space>
+            <TextView
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=""
+                android:gravity="center"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="30dp" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp"></Space>
+            <TextView
+                android:id="@+id/state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=""
+                android:gravity="center"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="30dp" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp"></Space>
+            <TextView
+                android:id="@+id/pincode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=""
+                android:gravity="center"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="                   "
+                android:textSize="60dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

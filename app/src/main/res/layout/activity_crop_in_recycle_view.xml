@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CropInRecycleView">
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/show"
+    android:background="@android:color/holo_green_light"
+    android:textColor="@android:color/white"
+    android:text="Show Items"
+    android:textSize="25dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/croprv"
+        android:layout_below="@+id/show"
+        tools:listitem="@layout/single_row"
+        android:layout_marginTop="3dp"/>
+</RelativeLayout>

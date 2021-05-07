@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Register"
+    android:background="@android:color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Registration form"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="35dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Registration type"
+                android:textSize="20dp" />
+
+            <RadioGroup
+                android:id="@+id/radiogroup1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textAlignment="center">
+
+                <RadioButton
+                    android:id="@+id/f"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Farmer"
+                    android:onClick="checkType"/>
+
+                <RadioButton
+                    android:id="@+id/t"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Trader"
+                    android:onClick="checkType"/>
+                <RadioButton
+                    android:id="@+id/c"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Customer"
+                    android:onClick="checkType"/>
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="FullName"
+                android:inputType="textPersonName"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/PhNoNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Contact Number"
+                android:inputType="number"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Gender"
+                android:textSize="20dp" />
+
+            <RadioGroup
+                android:id="@+id/radiogroup2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
+                android:textSize="20dp">
+
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:onClick="checkGender"/>
+
+                <RadioButton
+                    android:id="@+id/male"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:onClick="checkGender"/>
+
+                <RadioButton
+                    android:id="@+id/other"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Other"
+                    android:onClick="checkGender"/>
+
+            </RadioGroup>
+            <EditText
+                android:id="@+id/dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Date of Birth"
+                android:inputType="date"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/street"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Address(street)"
+                android:inputType="textPersonName"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="City"
+                android:inputType="textPersonName"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="State"
+                android:inputType="textPersonName"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="E-mail id"
+                android:inputType="textEmailAddress"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/pin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Pin Code"
+                android:inputType="number"
+                android:textSize="20dp" />
+
+
+            <Button
+                android:id="@+id/create"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:onClick="createAccount"
+                android:text="Create Account"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
